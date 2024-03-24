@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Date and Time in javascript</title>
+</head>
+<body bgcolor="lightblue" text="black">
+<center><h1>Date and time javascript</h1>
+<span id="mahesh"></span>
+<script>
+function getTime(){
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+document.getElementById("mahesh").innerHTML=h + ":" + m + ":" + s;
+setInterval("getTime()",1000);
+}
+getTime();
+</script>
+</center>
+</body>
+</html>
